@@ -1,0 +1,17 @@
+image:
+  file: .gitpod.dockerfile
+tasks:
+    - init: >
+          gp open README.md;
+          pip3 install -r "requirements.txt";
+      command: >
+          gp open README.md;
+          pip3 install -r "requirements.txt";
+# List the ports to expose. Learn more https://www.gitpod.io/docs/config-ports/
+ports:
+    - port: 9000-9099
+      onOpen: ignore
+vscode:
+    extensions:
+        - ms-toolsai.jupyter
+        - vscode.python
